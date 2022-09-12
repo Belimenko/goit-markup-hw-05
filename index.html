@@ -23,7 +23,7 @@
     </a>
 <ul class="menu list-item site-nav"> 
         <li class="menu-item">
-            <a href="./index.html" class="menu-link link navigation-list-link current">Студія</a>
+            <a href="./index.html" class="menu-link link navigation-list-link current ">Студія</a>
         </li>
         <li class="menu-item">
             <a class="menu-link link navigation-list-link portfolio" href="portfolio.html">Портфоліо</a>
@@ -60,7 +60,7 @@ info@devstudio.com
 <section class="sections hero">
     <div class="container hero-containar">
         <h1 class="slogan">Ефективні рішення для вашого бізнесу</h1>
-        <button class="modal-btn" type="button">Замовити-послугу</button>
+        <button class="modal-btn" type="button" data-modal-open>Замовити-послугу</button>
     </div>
 </section>
         <!--feature-->
@@ -113,14 +113,23 @@ info@devstudio.com
     <div class="container">
         <h2 class="title-services">Чим ми займаємося</h2>
             <ul class="list-item-services">
-                <li>
-                    <img src="./images/photo1.jpg" alt="photo1" width="370"/>
+                <li class="photo-service">
+                    <div class="photo-work">            
+                    <img src="./images/photo1.jpg" alt="розробник пише код" width="370"/>
+                    <h3 class="text-over-photo">Декстопні додатки</h3>
+                </div>
                 </li>
-                <li>
-                    <img src="./images/photo2.jpg" alt="photo2" width="370"/>
+                <li class="photo-service">
+                    <div class="photo-work">
+                    <img src="./images/photo2.jpg" alt="додатки до телефону" width="370"/>
+                    <h3 class="text-over-photo">Мобільні додатки</h3>
+                </div>
                 </li>
-                <li>
-                    <img src="./images/photo3.jpg" alt="photo3" width="370"/>
+                <li class="photo-service">
+                    <div class="photo-work">
+                    <img src="./images/photo3.jpg" alt="розробка дизайну" width="370"/>
+                    <h3 class="text-over-photo">Дизайнерські рішення</h3>
+                </div>
                 </li>
             </ul>
     </div>
@@ -390,5 +399,15 @@ info@devstudio.com
 </div>
  </div>
 </footer>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal"> 
+        <button type="button" class="modal-close-btn" data-modal-close>
+            <svg class="modal-close-icon" width="18" height="18">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
